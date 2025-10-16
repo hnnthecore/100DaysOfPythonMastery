@@ -1,4 +1,4 @@
-# 🍷 Day 1 - The Godfather's Greeting App 🎬
+# Day 1 - Working with Variables in Python 
 
 > “Great coders aren't born great — they grow great… through practice.”  
 

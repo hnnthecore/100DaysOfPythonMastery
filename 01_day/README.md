@@ -24,7 +24,8 @@ It’s a fun and engaging way to learn how Python interacts with user input and 
 
 ### 🧩 Sample Output
 
-https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/5891bbef3631d2c43d34082c3216071be8bea6fa/01_day/day1_output.png
+![Program Output Screenshot](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/5891bbef3631d2c43d34082c3216071be8bea6fa/01_day/day1_output.png)
+
+![The Godfather GIF](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/5891bbef3631d2c43d34082c3216071be8bea6fa/01_day/vito.gif)
 
 
-https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/5891bbef3631d2c43d34082c3216071be8bea6fa/01_day/vito.gif

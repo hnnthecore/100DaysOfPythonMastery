@@ -3,6 +3,7 @@
 > *"Sometimes you gotta run before you can walk."* — Tony Stark
 
 ---
+![Jarvis Gif](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/02_day/jarvis.gif)
 
 ### 🧠 Concepts Practised
 - Variables and Data Types (`int`, `float`, `str`, `bool`)
@@ -20,7 +21,7 @@ It reinforces how variables and data types work together.
 ---
 
 ### 🧩 Sample Output
-![Calculator Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/main/02_day/day2_output.png)
+![Calculator Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/02_day/day2_output.png)
 
 ---
 

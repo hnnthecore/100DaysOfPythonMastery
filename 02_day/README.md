@@ -3,7 +3,7 @@
 > *"Sometimes you gotta run before you can walk."* — Tony Stark
 
 ---
-![Jarvis Gif](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/02_day/jarvis.gif)
+![Jarvis Gif]https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/02_day/jarvis.gif)
 
 ### 🧠 Concepts Practised
 - Variables and Data Types (`int`, `float`, `str`, `bool`)
@@ -36,3 +36,4 @@ You learned how to:
 ### 🚀 Run the Program
 ```bash
 python main.py
+

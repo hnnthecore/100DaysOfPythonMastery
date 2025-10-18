@@ -25,3 +25,4 @@ This project helps reinforce your understanding of slicing, replacement, and pat
 ![Time Traveler Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/03_day/day3_output.png)
 
 ![Time Traveler GIF](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/03_day/timeTravel.gif)
+

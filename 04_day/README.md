@@ -4,7 +4,7 @@
 
 ---
 
-![Treasure Hunt Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/main/04_day/day4_output.png)
+
 
 ### 🧠 Concepts Practised
 - Conditional Statements (`if`, `elif`, `else`)  
@@ -38,5 +38,8 @@ You learned how to:
 ---
 
 ### 🧩 Sample Output
-![Treasure Hunt Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/main/04_day/day4_output.png)
+![Treasure Hunt Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/day4_output.png)
+
+![Treasure Hunt](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/treasure_hunt.png)
+
 

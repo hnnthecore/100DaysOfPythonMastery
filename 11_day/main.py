@@ -57,7 +57,7 @@ def play_game():
     """Main game loop."""
     game_intro()
     current_room = "entrance"
-    torch_timer = 10  # limited moves before torch burns out
+    torch_timer = 7  # limited moves before torch burns out
 
     while True:
         if torch_timer == 0:

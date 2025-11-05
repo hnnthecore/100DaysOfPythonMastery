@@ -38,7 +38,7 @@ This project introduces simulation loops, randomness, and OOP — all working to
 
 
 #### 🖼️ Simulation Output
-![BioSim Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/main/21_day/biosim_output.png)
+![BioSim Output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/day21_output.gif)
 
 ---
 
@@ -46,3 +46,4 @@ This project introduces simulation loops, randomness, and OOP — all working to
 1. Run the simulation:
    ```bash
    python main.py
+

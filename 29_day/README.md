@@ -39,7 +39,7 @@ This project showcases how geometry, randomness, and visualization come together
 ### 🧩 Screenshots & Output
 
 #### 🗺️ 2D Heightmap
-![TerraSim Heightmap](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/main/29_day/terrasim_2d.png)
+![TerraSim Heightmap](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/day29_output2.png)
 
 #### 🏔️ 3D Surface View
 ![TerraSim 3D](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/day29_output.png)
@@ -50,3 +50,4 @@ This project showcases how geometry, randomness, and visualization come together
 1. Install required libraries:
    ```bash
    pip install numpy matplotlib
+

@@ -37,5 +37,5 @@ If you press **✓ (Known)**, the word is removed from your learning list and sa
 
 ## Screenshot and output
 ![output](https://raw.githubusercontent.com/hnnthecore/100DaysOfPythonMastery/refs/heads/main/assets/day32_output.gif)
-Sali,Hi
-Adieu,Goodbye
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 63 – Dynamic Templates</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }} 👋</h1>
+
+    <p>Role: {{ role }}</p>
+
+    <h3>Skills:</h3>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/profile">View Profile</a>
+</body>
+</html>

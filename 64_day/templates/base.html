@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Flask App{% endblock %}</title>
+</head>
+<body>
+
+    <!-- Common navigation bar -->
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a>
+    </nav>
+
+    <hr>
+
+    <!-- This block will be replaced by child templates -->
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+
+    <!-- Common footer -->
+    <footer>
+        <p>© 2025 Flask Learning Series</p>
+    </footer>
+
+</body>
+</html>

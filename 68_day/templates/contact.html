@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}
+Day 68 – Contact Form
+{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+
+    <h2 class="mb-4">📩 Contact Us</h2>
+
+    <form method="POST">
+
+        <!-- NAME -->
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input
+                type="text"
+                name="name"
+                class="form-control"
+                value="{{ form_data.name }}"
+            >
+            {% if errors.name %}
+                <div class="text-danger mt-1">{{ errors.name }}</div>
+            {% endif %}
+        </div>
+
+        <!-- EMAIL -->
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+                type="email"
+                name="email"
+                class="form-control"
+                value="{{ form_data.email }}"
+            >
+            {% if errors.email %}
+                <div class="text-danger mt-1">{{ errors.email }}</div>
+            {% endif %}
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea
+                name="message"
+                class="form-control"
+                rows="4"
+            >{{ form_data.message }}</textarea>
+            {% if errors.message %}
+                <div class="text-danger mt-1">{{ errors.message }}</div>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Send Message
+        </button>
+
+    </form>
+
+    {% if success %}
+        <div class="alert alert-success mt-4">
+            ✅ Your message was sent successfully!
+        </div>
+    {% endif %}
+
+</div>
+{% endblock %}

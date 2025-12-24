@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+Day 67 – Validation
+{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+
+    <h2 class="mb-3">📝 Enter Your Name</h2>
+
+    <form method="POST">
+
+        <div class="mb-3">
+            <label class="form-label">Your Name</label>
+
+            <input
+                type="text"
+                name="username"
+                class="form-control"
+                placeholder="Enter your name"
+                value="{{ username or '' }}"
+            >
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+
+    </form>
+
+    <!-- ERROR MESSAGE -->
+    {% if error %}
+        <div class="alert alert-danger mt-4">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <!-- SUCCESS MESSAGE -->
+    {% if username and not error %}
+        <div class="alert alert-success mt-4">
+            Hello <strong>{{ username }}</strong> 👋  
+            Your input was validated successfully!
+        </div>
+    {% endif %}
+
+</div>
+{% endblock %}

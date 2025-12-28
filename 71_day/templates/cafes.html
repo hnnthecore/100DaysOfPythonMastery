@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Cafe List{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">📍 Cafes with Good WiFi</h2>
+
+{% if cafes %}
+    <div class="row">
+        {% for cafe in cafes %}
+            <div class="col-md-4 mb-3">
+                <div class="card p-3 shadow-sm">
+                    <h5>{{ cafe.name }}</h5>
+                    <p class="mb-1">📍 {{ cafe.location }}</p>
+                    <p class="mb-1">📶 WiFi: {{ cafe.wifi }}</p>
+                    <p>☕ Coffee: {{ cafe.coffee }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No cafes added yet.</p>
+{% endif %}
+{% endblock %}

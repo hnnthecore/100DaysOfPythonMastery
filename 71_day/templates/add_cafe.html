@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Add Cafe{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+    <h2 class="mb-4">➕ Add a Cafe</h2>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
+            {% for error in form.name.errors %}
+                <div class="text-danger">{{ error }}</div>
+            {% endfor %}
+        </div>
+
+        <div class="mb-3">
+            {{ form.location.label(class="form-label") }}
+            {{ form.location(class="form-control") }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.wifi.label(class="form-label") }}
+            {{ form.wifi(class="form-select") }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.coffee.label(class="form-label") }}
+            {{ form.coffee(class="form-select") }}
+        </div>
+
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+</div>
+{% endblock %}

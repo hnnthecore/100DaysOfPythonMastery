@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+Day 69 – WTForms Intro
+{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+
+    <h2 class="mb-3">🧾 WTForms Example</h2>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
+
+            {% for error in form.name.errors %}
+                <div class="text-danger mt-1">{{ error }}</div>
+            {% endfor %}
+        </div>
+
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+
+    {% if username %}
+        <div class="alert alert-success mt-4">
+            Hello <strong>{{ username }}</strong> 👋  
+            WTForms validated your input successfully!
+        </div>
+    {% endif %}
+
+</div>
+{% endblock %}

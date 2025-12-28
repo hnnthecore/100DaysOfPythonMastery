@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+Day 70 – Advanced WTForms
+{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+
+    <h2 class="mb-4">🧾 Registration Form</h2>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <!-- NAME -->
+        <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control") }}
+            {% for error in form.name.errors %}
+                <div class="text-danger mt-1">{{ error }}</div>
+            {% endfor %}
+        </div>
+
+        <!-- EMAIL -->
+        <div class="mb-3">
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
+            {% for error in form.email.errors %}
+                <div class="text-danger mt-1">{{ error }}</div>
+            {% endfor %}
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="mb-3">
+            {{ form.message.label(class="form-label") }}
+            {{ form.message(class="form-control", rows=4) }}
+            {% for error in form.message.errors %}
+                <div class="text-danger mt-1">{{ error }}</div>
+            {% endfor %}
+        </div>
+
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+
+    {% if success %}
+        <div class="alert alert-success mt-4">
+            ✅ Form submitted successfully using WTForms!
+        </div>
+    {% endif %}
+
+</div>
+{% endblock %}

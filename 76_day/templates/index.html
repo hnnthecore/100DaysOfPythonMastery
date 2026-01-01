@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card p-4 shadow-sm">
+    <h2 class="mb-3">🔗 URL Shortener</h2>
+
+    <form method="POST">
+        <input
+            type="url"
+            name="url"
+            class="form-control mb-3"
+            placeholder="Enter a long URL"
+            required
+        >
+        <button class="btn btn-primary">Shorten URL</button>
+    </form>
+
+    {% if short_url %}
+        <div class="alert alert-success mt-4">
+            Short URL:
+            <a href="{{ short_url }}" target="_blank">
+                {{ short_url }}
+            </a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

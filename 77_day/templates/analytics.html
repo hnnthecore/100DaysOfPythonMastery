@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>📊 Analytics</h2>
+
+<p><strong>Short Code:</strong> {{ short_code }}</p>
+<p><strong>Original URL:</strong> {{ original_url }}</p>
+<p><strong>Total Clicks:</strong> {{ total_clicks }}</p>
+
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th>IP Address</th>
+            <th>Timestamp (UTC)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for click in clicks %}
+        <tr>
+            <td>{{ click.ip_address }}</td>
+            <td>{{ click.clicked_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

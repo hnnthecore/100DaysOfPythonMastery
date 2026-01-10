@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card p-4 shadow-sm">
+    <h2>User: {{ user_id }}</h2>
+
+    {% if feature_on %}
+        <div class="alert alert-success">
+            🎉 You are seeing the <strong>NEW UI</strong> feature!
+        </div>
+    {% else %}
+        <div class="alert alert-secondary">
+            Old UI version (feature disabled)
+        </div>
+    {% endif %}
+
+    <p class="mt-3">
+        Try different users:
+        <br>
+        <a href="/?user=alice">alice</a> |
+        <a href="/?user=bob">bob</a> |
+        <a href="/?user=charlie">charlie</a>
+    </p>
+</div>
+{% endblock %}

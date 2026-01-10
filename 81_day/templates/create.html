@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card p-4 shadow-sm">
+    <h2>🕰 Create a Time Capsule</h2>
+
+    <form method="POST">
+        <textarea
+            name="message"
+            class="form-control mb-3"
+            rows="4"
+            placeholder="Write a message to your future self..."
+            required
+        ></textarea>
+
+        <label class="form-label">Unlock Date</label>
+        <input
+            type="date"
+            name="unlock_date"
+            class="form-control mb-3"
+            required
+        >
+
+        <button class="btn btn-primary">Seal Capsule</button>
+    </form>
+
+    <a href="/view" class="btn btn-link mt-3">View Capsules</a>
+</div>
+{% endblock %}

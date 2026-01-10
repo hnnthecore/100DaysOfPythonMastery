@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card text-dark p-4">
+    <h2>Add Service</h2>
+
+    <form method="POST">
+        <input
+            name="name"
+            class="form-control mb-3"
+            placeholder="Service Name"
+            required
+        >
+
+        <select name="status" class="form-select mb-3">
+            <option>Online</option>
+            <option>Degraded</option>
+            <option>Down</option>
+        </select>
+
+        <button class="btn btn-primary">Add</button>
+    </form>
+</div>
+{% endblock %}

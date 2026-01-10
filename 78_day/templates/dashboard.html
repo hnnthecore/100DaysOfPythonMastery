@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Service Status</h2>
+
+<div class="row">
+{% for service in services %}
+    <div class="col-md-4 mb-3">
+        <div class="card text-dark">
+            <div class="card-body">
+                <h5>{{ service.name }}</h5>
+                <p>Status:
+                    {% if service.status == "Online" %}
+                        🟢 Online
+                    {% elif service.status == "Down" %}
+                        🔴 Down
+                    {% else %}
+                        🟡 Degraded
+                    {% endif %}
+                </p>
+
+                <a href="/update/{{ service.id }}/Online" class="btn btn-success btn-sm">Online</a>
+                <a href="/update/{{ service.id }}/Degraded" class="btn btn-warning btn-sm">Degraded</a>
+                <a href="/update/{{ service.id }}/Down" class="btn btn-danger btn-sm">Down</a>
+
+                <a href="/logs/{{ service.id }}" class="btn btn-secondary btn-sm mt-2">View Logs</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card bg-black text-light p-4 shadow">
+    <p class="fs-5">{{ scene.text }}</p>
+
+    {% if scene.is_ending %}
+        <a href="/" class="btn btn-outline-light mt-3">
+            🔁 Restart Adventure
+        </a>
+    {% else %}
+        <div class="mt-4">
+            {% for choice in choices %}
+                <a
+                    href="/scene/{{ choice.next_scene }}"
+                    class="btn btn-primary mb-2 d-block"
+                >
+                    {{ choice.choice_text }}
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

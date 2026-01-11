@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card p-4 shadow-sm">
+    <h2>🧪 Test Rules</h2>
+
+    <form method="POST">
+        <input class="form-control mb-2" name="mood" placeholder="Mood">
+        <input class="form-control mb-2" name="weather" placeholder="Weather">
+        <input class="form-control mb-3" name="energy" placeholder="Energy">
+        <button class="btn btn-success">Evaluate</button>
+    </form>
+
+    {% if actions %}
+        <div class="alert alert-info mt-4">
+            <strong>Triggered Actions:</strong>
+            <ul>
+                {% for action in actions %}
+                    <li>{{ action }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

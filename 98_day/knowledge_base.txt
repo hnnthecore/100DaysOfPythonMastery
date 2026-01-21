@@ -1,0 +1,11 @@
+category:python
+Python is a versatile programming language used for automation, data analysis, web development, and scripting.
+
+category:automation
+Automation helps reduce repetitive tasks by using scripts to handle files, data processing, and system workflows.
+
+category:data
+Data analysis involves cleaning, processing, and extracting insights from structured and unstructured datasets.
+
+category:career
+Building strong fundamentals in Python opens opportunities in backend development, data engineering, and automation roles.

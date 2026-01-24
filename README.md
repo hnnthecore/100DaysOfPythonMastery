@@ -91,6 +91,23 @@
 - [Day 81 - Digital Time Capsule (Flask & SQLite)](81_day/)
 - [Day 82 - Choose Your Own Adventure Engine (Flask & SQLite)](82_day/)
 - [Day 83 - IFTTT-Style Rule Engine (Flask & SQLite)](83_day/)
+- [Day 84 - Life Simulator Engine (Decision & Consequence System)](84_day/)
+- [Day 85 -Procedural World Generator (Simulation Engine)](85_day/)
+- [Day 86 - AI Survival Agent (Autonomous Decision System)](86_day/)
+- [Day 87 - Multi-Agent Survival Arena (Emergent Behavior System)](87_day/)
+- [Day 88 -Economic Simulation Engine (Supply, Demand & Collapse)](88_day/)
+- [Day 89 - Log Analysis & Anomaly Detection Engine](89_day/)
+- [Day 90 - API Rate Limiter & Abuse Detection Engine](90_day/)
+- [Day 91 - Smart Text Analyzer](91_day/)
+- [Day 92 - Focus Timer (GUI with Tkinter)](92_day/)
+- [Day 93 - Interactive Data Visualization Playground](93_day/)
+- [Day 94 - Python Playground (Multi-Tool Utility)](94_day/)
+- [Day 95 - Smart Command-Line Assistant](95_day/)
+- [Day 96 - Data → Insight Engine (CSV Analyzer)](96_day/)
+- [Day 97 - Smart Decision Advisor (Rule-Based Engine)](97_day/)
+- [Day 98 - AI Personal Knowledge Engine (Reasoning + Memory)](98_day/)
+- [Day 99 - Event Processing Pipeline (System Design Project)](99_day/)
+- [Day 100 - PyOS: The Python Operating System](100_day/)
 --- 
 
 Every project is designed to be **practical, creative, and beginner-friendly**,  
